@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateEmployeeComponent implements OnInit {
   employee: Employee = new Employee();
-  submitted = false;
+  isSubmitted = false;
   constructor(
     private employeeService: EmployeeService,
     private router: Router
@@ -19,7 +19,7 @@ export class CreateEmployeeComponent implements OnInit {
   ngOnInit(): void {}
 
   newEmployee(): void {
-    this.submitted = false;
+    this.isSubmitted = false;
     this.employee = new Employee();
   }
 
@@ -35,7 +35,7 @@ export class CreateEmployeeComponent implements OnInit {
   };
 
   onSubmit = () => {
-    this.submitted = true;
+    this.isSubmitted = true;
     this.save();
   };
 

@@ -1,5 +1,5 @@
 <h3>Create Employee</h3>
-<div [hidden]="submitted" , style="width: 400px">
+<div [hidden]="isSubmitted" , style="width: 400px">
   <form (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="name">First Name</label>
@@ -38,6 +38,6 @@
   </form>
 </div>
 
-<div [hidden]="!submitted">
+<div [hidden]="!isSubmitted">
   <h4>You submitted successfully!</h4>
 </div>
