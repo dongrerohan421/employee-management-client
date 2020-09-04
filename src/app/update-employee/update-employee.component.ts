@@ -1,8 +1,7 @@
-import { EmployeeService } from './../employee.service';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Employee } from './../employee';
-import { Component, OnInit } from '@angular/core';
-import { error } from '@angular/compiler/src/util';
+import { EmployeeService } from './../employee.service';
 
 @Component({
   selector: 'app-update-employee',
