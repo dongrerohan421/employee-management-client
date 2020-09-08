@@ -1,5 +1,5 @@
 <h3>Create Employee</h3>
-<div [hidden]="isSubmitted" , style="width: 400px">
+<div [hidden]="isSubmitted" style="width: 400px">
   <form (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="name">First Name</label>
@@ -7,7 +7,8 @@
         type="text"
         class="form-control"
         id="firstName"
-        required[(ngModel)]="employee.firstName"
+        required
+        [(ngModel)]="employee.firstName"
         name="firstName"
       />
     </div>
@@ -18,7 +19,8 @@
         type="text"
         class="form-control"
         id="lastName"
-        required[(ngModel)]="employee.lastName"
+        required
+        [(ngModel)]="employee.lastName"
         name="lastName"
       />
     </div>
@@ -29,7 +31,8 @@
         type="text"
         class="form-control"
         id="emailId"
-        required[(ngModel)]="employee.emailId"
+        required
+        [(ngModel)]="employee.emailId"
         name="emailId"
       />
     </div>
