@@ -1,14 +1,15 @@
 <h3>Update Employee</h3>
-<div style="width: 400px">
+<div [hidden]="isSubmitted" style="width: 400px">
   <form (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="name">First Name</label>
       <input
         type="text"
         class="form-control"
-        name="firstName"
         id="firstName"
-        required[(ngModel)]="employee.firstName"
+        required
+        [(ngModel)]="employee.firstName"
+        name="firstName"
       />
     </div>
 
@@ -17,9 +18,10 @@
       <input
         type="text"
         class="form-control"
-        name="lastName"
         id="lastName"
-        required[(ngModel)]="employee.lastName"
+        required
+        [(ngModel)]="employee.lastName"
+        name="lastName"
       />
     </div>
 
@@ -28,9 +30,10 @@
       <input
         type="text"
         class="form-control"
-        name="emailId"
         id="emailId"
-        required[(ngModel)]="employee.emailId"
+        required
+        [(ngModel)]="employee.emailId"
+        name="emailId"
       />
     </div>
 

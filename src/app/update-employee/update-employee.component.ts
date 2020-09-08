@@ -11,6 +11,7 @@ import { EmployeeService } from './../employee.service';
 export class UpdateEmployeeComponent implements OnInit {
   id: number;
   employee: Employee;
+  isSubmitted = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -46,6 +47,7 @@ export class UpdateEmployeeComponent implements OnInit {
   };
 
   onSubmit = () => {
+    this.isSubmitted = true;
     this.updateEmployee();
   };
 
