@@ -10,14 +10,14 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Please visit https://github.com/dongrerohan421/employee-management-application
 
-- **Get employees:**
+- **Get employees:** <br><br>
   ![Alt text](Employee_List.png)
 
-- **Get employee:**
+- **Get employee:**<br><br>
   ![Alt text](Employee_Details.png)
 
-- **Create employee:**
+- **Create employee:**<br><br>
   ![Alt text](Create_Employee.png)
 
-- **Update employee:**
+- **Update employee:**<br><br>
   ![Alt text](Update_Employee.png)
